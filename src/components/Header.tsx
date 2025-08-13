@@ -6,14 +6,14 @@ import { Search } from "lucide-react";
 import { Settings } from "lucide-react";
 import Themetoggle from "./Themetoggle";
 
-const Header = () => {
+const Header = ({hideSidebar, onToggleSidebar}) => {
   return (
     <>
       <div className="bg-white/-80 dark:bg-slate-900/80 backdrop-blur-xl border-b border-slate-200/50 dark:border-slate-700/50 px-6 py-4">
         <div className="flex items-center justify-between">
           {/*left section */}
           <div className="flex items-center space-x-4">
-            <button className="p-4 rounded-lg text-slate-600 dark:text-slate-300">
+            <button className="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" onClick={onToggleSidebar}>
               <Menu className="w-5 h-5" />
             </button>
             <div className="hidden md:block">
