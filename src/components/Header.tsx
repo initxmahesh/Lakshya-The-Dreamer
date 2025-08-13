@@ -1,9 +1,10 @@
-import React from 'react'
-import { ChevronDown, Menu } from 'lucide-react';
-import { Sun } from 'lucide-react'
-import { Bell } from 'lucide-react'
-import { Search } from 'lucide-react'
-import { Settings } from 'lucide-react';
+import React from "react";
+import { ChevronDown, Menu } from "lucide-react";
+import { Sun } from "lucide-react";
+import { Bell } from "lucide-react";
+import { Search } from "lucide-react";
+import { Settings } from "lucide-react";
+import Themetoggle from "./Themetoggle";
 
 const Header = () => {
   return (
@@ -19,7 +20,9 @@ const Header = () => {
               <h1 className="text-2xl font-black text-slate-800 dark:text-white">
                 Dashboard
               </h1>
-              <p>Hey Welcome, How is your day? </p>
+              <p className="text-slate-800 dark:text-white">
+                Hey Welcome, How is your day?{" "}
+              </p>
             </div>
           </div>
           {/*Center*/}
@@ -34,31 +37,35 @@ const Header = () => {
             </div>
           </div>
           {/* Mode */}
-          <div className='flex items-center gap-10 '>
-            <button className="p-2.5 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
-              <Sun className="w-5 h-5" />
-            </button>
+          <div className="flex items-center gap-10 ">
+            <Themetoggle />
             <button className="relative p-2.5 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
               <Bell className="w-5 h-5" />
             </button>
-            <button className='p-2.5 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors'>
-              <Settings className='w-5 h-5'/>
+            <button className="p-2.5 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+              <Settings className="w-5 h-5" />
             </button>
           </div>
-          <div className='flex items-center space-x-3 pl-3 border-l border-slate-200 dark:border-slate-700'>
-              <img src="" alt='user' className='w-8 h-8 rounded-full ring-2 ring-blue-500' />
-              <div className='hidden md:block'>
-                <p className='text-sm font-medium text-slate-500 dark:text-slate-400'>
-                  Mahesh Chaudhary
-                </p>
-                <p className='text-xs text-slate-500 dark:text-slate-400'>Learner</p>
-              </div>
-              <ChevronDown className='w-4 h-4 text-slate-400' />
+          <div className="flex items-center space-x-3 pl-3 border-l border-slate-200 dark:border-slate-700">
+            <img
+              src=""
+              alt="user"
+              className="w-8 h-8 rounded-full ring-2 ring-blue-500"
+            />
+            <div className="hidden md:block">
+              <p className="text-sm font-medium text-slate-500 dark:text-slate-400">
+                Mahesh Chaudhary
+              </p>
+              <p className="text-xs text-slate-500 dark:text-slate-400">
+                Learner
+              </p>
             </div>
+            <ChevronDown className="w-4 h-4 text-slate-400" />
+          </div>
         </div>
       </div>
     </>
   );
-}
+};
 
-export default Header
+export default Header;
