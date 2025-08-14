@@ -33,7 +33,7 @@ function App() {
               onToggleSidebar={() => setSidebarCollapse(!SidebarCollapse)}
             />
             <main className="flex-1 overflow-y-auto bg-transparent">
-              <div className="p-6 -space-y-6">
+              <div className=" p-6 -space-y-6">
                 <Routes>
                   <Route path='/' element={<Dashboard />} />
                   <Route path='/career' element={<Career />} />

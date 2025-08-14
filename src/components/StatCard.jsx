@@ -71,8 +71,7 @@ const StatCard = () => {
                     >
                       {stats.change}
                     </span>
-                    <span className="text-sm text-slate-500 dark:text-slate-400">
-                    </span>
+                    <span className="text-sm text-slate-500 dark:text-slate-400"></span>
                   </div>
                 </div>
                 <div
@@ -89,6 +88,11 @@ const StatCard = () => {
             </div>
           );
         })}
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-3 gap-4 pt-1">
+        <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-2xl p-3 h-96 border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl hover:shadow-slate-200/20 dark:hover:shadow-slate-900/20 transition-all duration-300 group"></div>
+        <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-2xl p-3 h-96 border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl hover:shadow-slate-200/20 dark:hover:shadow-slate-900/20 transition-all duration-300 group"></div>
+        <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-2xl p-3 h-96 border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl hover:shadow-slate-200/20 dark:hover:shadow-slate-900/20 transition-all duration-300 group"></div>
       </div>
     </>
   );
