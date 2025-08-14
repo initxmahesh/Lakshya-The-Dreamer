@@ -1,35 +1,23 @@
 import React from "react";
-import Goaltrace from "./Goaltrace";
-import Interest from "./Interest";
-import CareerGoals from "./CareerGoals";
+// import Goaltrace from "./Goaltrace";
+import StatCard from "./StatCard";
+// import CareerGoals from "./CareerGoals";
 
 
 
 const Dashboard = () => {
   return (
     <>
-        <div className="pl-5 pt-5">
-          <h1 className="font-bold text-5xl text-slate-900/90 dark:text-slate-100/80">Your Career Journey</h1>
+        <div className="p-3 ">
+          <h1 className="font-bold text-3xl text-slate-900/90 dark:text-slate-100/80">Your Career Journey</h1>
           <p className="text-sm text-slate-900 dark:text-slate-100/80">
             Track Your Progress, Explore Opportuinities, and achieve your career
             goals
           </p>
         </div>
-      <div className="flex h-[84vh] max-w-screen overflow-hidden">
-        <div className="flex-1 flex items-stretch pt-10 overflow-hidden">
-          <div className="flex-1 bg-white rounded-lg shadow-md flex items-center justify-center overflow-hidden">
-            <Goaltrace />
-          </div>
+        <div className="space-y-6">
+          <StatCard />
         </div>
-        <div className="flex flex-1 flex-col gap-2 p-1 overflow-hidden">
-          <div className="flex-1 bg-white rounded-lg shadow-md flex overflow-hidden">
-            <Interest />
-          </div>
-          <div className="flex-1 bg-white rounded-lg shadow-md flex overflow-hidden">
-            <CareerGoals />
-          </div>
-        </div>
-      </div>
     </>
   );
 };

@@ -5,6 +5,7 @@ import { Bell } from "lucide-react";
 import { Search } from "lucide-react";
 import { Settings } from "lucide-react";
 import Themetoggle from "./Themetoggle";
+import Mahesh from '../assets/mahesh.jpg'
 
 const Header = ({hideSidebar, onToggleSidebar}) => {
   return (
@@ -48,7 +49,7 @@ const Header = ({hideSidebar, onToggleSidebar}) => {
           </div>
           <div className="flex items-center space-x-3 pl-3 border-l border-slate-200 dark:border-slate-700">
             <img
-              src=""
+              src={Mahesh}
               alt="user"
               className="w-8 h-8 rounded-full ring-2 ring-blue-500"
             />

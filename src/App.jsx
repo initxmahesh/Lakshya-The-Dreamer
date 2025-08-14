@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import Dashboard from "./components/Dashboard";
+import {Routes, Route} from 'react-rout'
 
 function App() {
 
