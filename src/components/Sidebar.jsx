@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "../assets/logo.png";
 import userImage from "../assets/mahesh.jpg";
+import { useNavigate } from "react-router-dom";
 import {
   BookOpen,
   BrainCircuit,
@@ -56,16 +57,17 @@ const menus = [
   },
 ];
 
-const Sidebar = ({ collapse, onToggle, currentPage, onPageChange }) => {
-  const [expand, setExpand] = useState(new Set([""]));
-  const toggleExpand = (itemid) => {
-    const newExpand = new Set(expand);
-    if (newExpand.has(itemid)) {
-      newExpand.delete(itemid);
-    } else {
-      newExpand.add(itemid);
-    }
-    setExpand(newExpand);
+const Sidebar = ({ collapse, currentPage, onPageChange }) => {
+  const navigate = useNavigate();
+  const menuRoutes = {
+    dashboard: "/",
+    "career interest": "/career",
+    "job goals": "/job",
+    "goal tracker": "/goaltracker",
+    "AI Advisor": "/aiadvisor",
+    "job market": "/jobmarket",
+    Resources: "/resources",
+    calendar: "/calendar",
   };
   return (
     <>
@@ -93,6 +95,7 @@ const Sidebar = ({ collapse, onToggle, currentPage, onPageChange }) => {
                   }`}
                   onClick={() => {
                     onPageChange(item.id);
+                    navigate(menuRoutes[item.id]);
                   }}
                 >
                   <div className="flex items-center space-x-3">

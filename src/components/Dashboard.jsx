@@ -1,7 +1,7 @@
 import React from "react";
 // import Goaltrace from "./Goaltrace";
 import StatCard from "./StatCard";
-// import CareerGoals from "./CareerGoals";
+import Career from "../pages/Career.jsx";
 
 
 
