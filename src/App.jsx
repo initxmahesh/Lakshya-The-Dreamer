@@ -5,7 +5,6 @@ import Sidebar from "./components/Sidebar";
 import Dashboard from "./components/Dashboard";
 import {Routes, Route } from 'react-router-dom';
 import Career from "./pages/Career";
-import JobGoal from './pages/JobGoal';
 import GoalTracker from './pages/GoalTracker';
 import JobMarket from './pages/JobMarket';
 import Resources from './pages/Resources';
@@ -33,11 +32,10 @@ function App() {
               onToggleSidebar={() => setSidebarCollapse(!SidebarCollapse)}
             />
             <main className="flex-1 overflow-y-auto bg-transparent">
-              <div className="p-6 -space-y-6">
+              <div className=" p-6 -space-y-6">
                 <Routes>
                   <Route path='/' element={<Dashboard />} />
                   <Route path='/career' element={<Career />} />
-                  <Route path='/job' element={<JobGoal />} />
                   <Route path='/goaltracker' element={<GoalTracker />} />
                   <Route path="/aiadvisor" element={<AiAdvisor />} />
                   <Route path="/jobmarket" element={<JobMarket />} />
