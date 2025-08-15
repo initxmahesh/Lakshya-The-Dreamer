@@ -26,11 +26,6 @@ const menus = [
     label: "Career",
   },
   {
-    id: "job goals",
-    icon: Goal,
-    label: "Job Goal",
-  },
-  {
     id: "goal tracker",
     icon: TrendingUp,
     label: "Goal Tracker",
@@ -62,7 +57,6 @@ const Sidebar = ({ collapse, currentPage, onPageChange }) => {
   const menuRoutes = {
     dashboard: "/",
     "career interest": "/career",
-    "job goals": "/job",
     "goal tracker": "/goaltracker",
     "AI Advisor": "/aiadvisor",
     "job market": "/jobmarket",

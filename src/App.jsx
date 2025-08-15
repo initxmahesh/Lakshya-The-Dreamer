@@ -5,7 +5,6 @@ import Sidebar from "./components/Sidebar";
 import Dashboard from "./components/Dashboard";
 import {Routes, Route } from 'react-router-dom';
 import Career from "./pages/Career";
-import JobGoal from './pages/JobGoal';
 import GoalTracker from './pages/GoalTracker';
 import JobMarket from './pages/JobMarket';
 import Resources from './pages/Resources';
@@ -37,7 +36,6 @@ function App() {
                 <Routes>
                   <Route path='/' element={<Dashboard />} />
                   <Route path='/career' element={<Career />} />
-                  <Route path='/job' element={<JobGoal />} />
                   <Route path='/goaltracker' element={<GoalTracker />} />
                   <Route path="/aiadvisor" element={<AiAdvisor />} />
                   <Route path="/jobmarket" element={<JobMarket />} />
